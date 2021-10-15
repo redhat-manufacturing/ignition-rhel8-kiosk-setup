@@ -32,7 +32,7 @@ mkdir -p /home/ignition-kiosk-user/.config/autostart
 cat <<EOF >/home/ignition-kiosk-user/.config/autostart/ignition-kiosk-script.desktop
 [Desktop Entry]
 Type=Application
-Exec=/home/ignition-kiosk-user/ignition-rhel8-kiosk-setup/scripts/run.sh
+Exec=sh -c "xterm -hold -e /home/ignition-kiosk-user/ignition-rhel8-kiosk-setup/scripts/ignition-kiosk-user/autostart.sh"
 Hidden=false
 X-GNOME-Autostart-enabled=true
 Name[en_US]=ignition-kiosk
