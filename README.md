@@ -1,0 +1,1 @@
+# ignition-rhel8-kiosk-setup
