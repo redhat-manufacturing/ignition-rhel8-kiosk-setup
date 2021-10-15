@@ -8,7 +8,7 @@ CONTAINER_EXISTS=$(podman container exists my-ignition-maker; echo $?)
 if [[ CONTAINER_EXISTS -eq 0 ]]
 then
     podman start my-ignition-maker
-    sleep 5
+    sleep 15
     firefox -kiosk $IGNITION_CLIENT_URL
 else
     podman run -p 8088:8088 --name my-ignition-maker --privileged \
