@@ -1,6 +1,7 @@
 # install required packages
 
 dnf -y install podman git
+sleep 10
 
 # create the kiosk ignition user
 
@@ -41,6 +42,10 @@ EOF
 # clone repository
 
 git clone https://github.com/keunlee/ignition-rhel8-kiosk-setup.git /home/ignition-kiosk-user/
+
+# disable gnome-initial-setup
+
+touch /home/ignition-kiosk-user/.config/gnome-initial-setup-done
 
 # change file/dir owner to ignition-kiosk-user
 

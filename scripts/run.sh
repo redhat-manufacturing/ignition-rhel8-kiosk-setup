@@ -1,1 +1,1 @@
-xeyes
+xterm -hold -e xeyes
