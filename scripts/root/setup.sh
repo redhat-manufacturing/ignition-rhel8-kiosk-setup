@@ -41,7 +41,7 @@ EOF
 
 # clone repository
 
-git clone https://github.com/keunlee/ignition-rhel8-kiosk-setup.git /home/ignition-kiosk-user/ignition-rhel8-kiosk-setup
+git clone https://github.com/redhat-manufacturing/ignition-rhel8-kiosk-setup.git /home/ignition-kiosk-user/ignition-rhel8-kiosk-setup
 
 # disable gnome-initial-setup
 

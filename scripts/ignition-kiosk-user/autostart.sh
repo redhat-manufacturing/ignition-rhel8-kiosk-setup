@@ -7,11 +7,9 @@ CONTAINER_EXISTS=$(podman container exists my-ignition-maker; echo $?)
 
 if [[ CONTAINER_EXISTS -eq 0 ]]
 then
-    podman start my-ignition-maker
-    sleep 30
-    firefox -kiosk $IGNITION_CLIENT_URL
+    podman start my-ignition
 else
-    podman run -p 8088:8088 --name my-ignition-maker --privileged \
+    podman run -p 8088:8088 --name my-ignition --privileged \
     -e GATEWAY_ADMIN_PASSWORD=password \
     -e IGNITION_EDITION=maker \
     -e IGNITION_LICENSE_KEY=$IGNITION_LICENSE_KEY \
@@ -19,3 +17,6 @@ else
     -e IGNITION_ACTIVATION_TOKEN_FILE=/activation-token \
     -d quay.io/kelee/ignition-maker-ubi:8.1.10
 fi
+
+sleep 30
+firefox -kiosk $IGNITION_CLIENT_URL
