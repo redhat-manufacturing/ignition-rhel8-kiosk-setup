@@ -10,16 +10,15 @@ These scripts will update a RHEL 8 instance to automatically boot into another u
 
 1. Login in as root and clone the following repository: 
 
-`git clone https://github.com/redhat-manufacturing/ignition-rhel8-kiosk-setup.git`
+    `git clone https://github.com/redhat-manufacturing/ignition-rhel8-kiosk-setup.git`
 
 2. Run the following script: 
 
-`sudo scripts/setup.sh`
+    `sudo scripts/setup.sh`
 
-Once the script is ran successfully, there will be a new user added. 
+    Once the script is ran successfully, there will be a new user added. 
 
-u: ignition-kiosk-user
-p: password
+    u/p: ignition-kiosk-user/password
 
 3. Obtain an Ignition activation token and license key from [Inductive Automation](https://inductiveautomation.com/)  
 
