@@ -1,5 +1,7 @@
 # Overview: Ignition Kiosk Setup on RHEL 8
 
+These scripts will update a RHEL 8 instance to automatically boot into another user account to automate the startup of a fullscreen kiosk into Inductive Automation Ignition
+
 # Prerequisites
 
 - RHEL 8 Workstation Installation
