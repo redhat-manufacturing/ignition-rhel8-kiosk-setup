@@ -3,7 +3,7 @@ IGNITION_LICENSE_KEY=$(</home/ignition-kiosk-user/ignition-rhel8-kiosk-setup/scr
 IGNITION_ACTIVATION_TOKEN_FILE_PATH=/home/ignition-kiosk-user/ignition-rhel8-kiosk-setup/scripts/ignition-kiosk-user/activation-token
 IGNITION_CLIENT_URL=http://localhost:8088/data/perspective/client/samplequickstart
 
-CONTAINER_EXISTS=$(podman container exists my-ignition-maker; echo $?)
+CONTAINER_EXISTS=$(podman container exists my-ignition; echo $?)
 
 if [[ CONTAINER_EXISTS -eq 0 ]]
 then
